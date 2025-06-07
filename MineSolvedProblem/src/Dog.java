@@ -1,12 +1,14 @@
-public class Dog {
+public class Dog extends Animal {
     private String name;
 
-    public Dog(String name) {
-        this.name = name;
+    public Dog() {
+        super();
     }
 
-    public void printName(){
-        System.out.println(name);
+    @Override
+    public void move(String speed){
+        super.move(speed);
+        System.out.println("speed");
     }
 }
 
